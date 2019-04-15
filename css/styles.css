@@ -1,10 +1,173 @@
-a.footer {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+a.footer-bottom, a.footer-top {
+  border-bottom: 30px solid #8A7C65;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 200px;
   position: fixed;
   bottom: 0;
-  width: 100%;
-  padding: 10px 16px;
   text-decoration: none;
-  background-color: #442109;
-  color: #efefef;
+  text-align: center;
+  color:#DBD5CB;
   font-size: 14px;
+}
+
+a.footer-top {
+  border-bottom: 10px solid #8A7C65;
+  border-right: 10px solid transparent;
+  width: 170px;
+  bottom: 30px;
+}
+
+body {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+body.main {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,1)), url("/images/Exterior Main.jpg");
+}
+
+body.side {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Exterior Right Side.jpg");
+}
+
+body.back {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Exterior Apse.jpg");
+  background-position: bottom !important;
+}
+
+body.fountain {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Exterior Apse Fountain.jpg");
+  background-position: bottom !important;
+}
+
+body.front {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Exterior Facade.jpg");
+}
+
+body.facade {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Exterior Facade Base.jpg");
+}
+
+body.towers {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Exterior Facade Up.jpg");
+  background-position: top !important;
+}
+
+body.entry {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Interior Entry.jpg");
+}
+
+body.wing {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Interior North.jpg");
+}
+
+body.window {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0)), url("/images/Interior North Window.jpg");
+}
+
+body.altar {
+  background: radial-gradient(at top left, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("/images/Interior Apse.jpg");
+}
+
+img.main {
+  width:100%;
+}
+
+h1.main {
+  font-family: Tangerine;
+  position: fixed;
+  bottom: 10%;
+  right: 4%;
+  color: #f0efef;
+  font-size: 3vw;
+}
+
+h2.main {
+  font-family: Tangerine;
+  position: fixed;
+  bottom: 6%;
+  right: 4.75%;
+  color: #f0efef;
+  font-size: 2vw;
+}
+
+body div.panel div.container-fluid ul.nav {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+body div.panel div.container-fluid ul.nav li.nav-item a {
+  background: #9e8e73;
+  color: #f0efef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body div.panel div.container-fluid ul.nav li.nav-item a.active {
+  color: black;
+}
+
+body div.panel {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+div.forward a {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0;
+  background: #8A7C65;
+  color: #DBD5CB;
+  width: 116px;
+  text-align: center;
+  border: 1px solid black;
+  border-top-style: none;
+}
+
+div.back a {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  background: #8A7C65;
+  color: #DBD5CB !important;
+  width: 116px;
+  text-align: center;
+  border: 1px solid black;
+  border-top-style: none;
+  padding-bottom: 8px;
+}
+
+div.first a, div.last a {
+  color: #8A7C65 !important;
+}
+
+body div.panel div.container-fluid ul.nav li.nav-item a.nav-link:hover, body div.forward a.nav-link:hover, body div.back a.nav-link:hover {
+  background: #635948;
+}
+
+body div.first a.nav-link:hover, body div.last a.nav-link:hover {
+  color: #635948 !important;
+}
+
+body.main div.container-fluid div.row div.col img.gridpic {
+  margin-top: 10vw;
+  width: 100%;
 }
